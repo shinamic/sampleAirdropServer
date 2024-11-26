@@ -48,7 +48,7 @@ async function sendWelcomeMessageWithButtons(chatId, chatusername) {
             Markup.button.url('Tiktok', 'https://www.tiktok.com/@thetrend911?_t=8qIHSYr2PkP&_r=1')
         ],
         [
-            Markup.button.url('Play Tomcat Airdrop', `https://t.me/Tom_Cat_Affiliate_bot/Tom_Cat_Affiliate?tomcatId=${telegramId}`)
+            Markup.button.url('Play Tomcat Airdrop', `https://t.me/sample_Airdrop_Bot/sampleAirdrop?sampleId=${telegramId}`)
         ]
     ]);
 
