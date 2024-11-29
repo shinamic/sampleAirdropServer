@@ -36,7 +36,7 @@ function sendMessage(messageObj, messageText) {
 
 // Function to generate a unique referral ID
 function generateReferralId() {
-    return 'tomcat' + crypto.randomBytes(5).toString('hex');  // Generates a referral ID like 'kentIdxxxxxx'
+    return 'sample' + crypto.randomBytes(5).toString('hex');  // Generates a referral ID like 'kentIdxxxxxx'
 }
 
 // Function to send message with inline buttons
@@ -45,7 +45,7 @@ async function sendWelcomeMessageWithButtons(chatId, chatusername) {
     const inlineKeyboard = Markup.inlineKeyboard([
         [
             Markup.button.url('Youtube', 'https://youtube.com/@freecodecamp?si=V1MFKPg5V-6xh1jq'),
-            Markup.button.url('Tiktok', 'https://www.tiktok.com/@thetrend911?_t=8qIHSYr2PkP&_r=1')
+            Markup.button.url('Tiktok', 'https://www.tiktok.com')
         ],
         [
             Markup.button.url('Play Tomcat Airdrop', `https://t.me/sample_Airdrop_Bot/sampleAirdrop?sampleId=${telegramId}`)
@@ -54,7 +54,8 @@ async function sendWelcomeMessageWithButtons(chatId, chatusername) {
 
     await bot.telegram.sendMessage(
         chatId,
-        `Hello ${chatusername} ! Welcome to TomCat !! 
+        `Hello ${chatusername} ! Welcome to sampleairdrop !! 
+        this bot is just to show you a sample of what ill be bulding for you,
         You are now the director of a crypto exchange.
         Which one? You choose. Tap the screen, collect coins, pump up your passive income, 
         develop your own income strategy.
