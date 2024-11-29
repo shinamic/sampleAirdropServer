@@ -120,7 +120,7 @@ async function handleStartCommand(messageObj, referralCode) {
             // The user already exists
             console.log('Existing user.');
             await sendWelcomeMessageWithButtons(chatId, user.chatusername || "anonymoususer");  // Send message with buttons to existing users
-            return sendMessage(messageObj, `Welcome back! Your referral link is https://t.me/Tom_Cat_Affiliate_bot?start=${user.referralId}`); 
+            return sendMessage(messageObj, `Welcome back! Your referral link is https://t.me/sample_Airdrop_Bot?start=${user.referralId}`); 
         }
     } catch (error) {
         console.error('Error in start command:', error);
