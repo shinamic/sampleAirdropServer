@@ -48,14 +48,14 @@ async function sendWelcomeMessageWithButtons(chatId, chatusername) {
             Markup.button.url('Tiktok', 'https://www.tiktok.com')
         ],
         [
-            Markup.button.url('Play Tomcat Airdrop', `https://t.me/sample_Airdrop_Bot/sampleAirdrop?sampleId=${telegramId}`)
+            Markup.button.url('Launch Sample Airdrop', `https://t.me/sample_Airdrop_Bot/sampleAirdrop?sampleId=${telegramId}`)
         ]
     ]);
 
     await bot.telegram.sendMessage(
         chatId,
         `Hello ${chatusername} ! Welcome to sampleairdrop !! 
-        this bot is just to show you a sample of what ill be bulding for you,
+        This bot is just to show you a sample of what ill be bulding for you,\n
         You are now the director of a crypto exchange.
         Which one? You choose. Tap the screen, collect coins, pump up your passive income, 
         develop your own income strategy.
