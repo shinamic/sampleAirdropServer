@@ -54,13 +54,12 @@ async function sendWelcomeMessageWithButtons(chatId, chatusername) {
 
     await bot.telegram.sendMessage(
         chatId,
-        `Hello ${chatusername} ! Welcome to sampleairdrop !! 
-        This bot is just to show you a sample of what i'll be bulding for you,\n
-        You are now the director of a crypto exchange.
-        Which one? You choose. Tap the screen, collect coins, pump up your passive income, 
-        develop your own income strategy.
-        We’ll definitely appreciate your efforts once the token is listed (the dates are coming soon).
-        Don't forget about your friends — bring them to the game and get even more coins together!`,
+        `Hello ${chatusername}! Welcome to SampleAirdrop!!\n\n` +
+        `This bot is just to show you a sample of what I'll be building for you.\n\n` +
+        `You are now the director of a crypto exchange.\n` +
+        `Which one? You choose. Tap the screen, collect coins, pump up your passive income, and develop your own income strategy.\n\n` +
+        `We’ll definitely appreciate your efforts once the token is listed (dates are coming soon).\n\n` +
+        `Don't forget about your friends — bring them to the game and get even more coins together!`,
         inlineKeyboard
     );
 }
